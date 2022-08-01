@@ -1,0 +1,46 @@
+:root {
+	--brand-color:#D50000;
+	--text-muted:#6C757D;
+}
+body {
+	/* font-family: 'Barlow', sans-serif; */
+	font-family: 'DM Sans', sans-serif;
+	/* font-family: 'Inter', sans-serif; */
+	font-size: 16px;
+}
+.card-feeds {}
+.card-feeds .card-profile {}
+.card-feeds .card-profile img {
+	width: 40px;
+}
+.card-feeds .card-profile-name {
+	font-size: 14px;
+	font-weight: 600;
+}
+.card-feeds .card-timeline {
+	font-size: 12px;
+}
+.card-feeds .card-footer {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.card-feeds .card-button-group {}
+.card-feeds .card-button-group .btn {
+	color: var(--text-muted);
+	padding: 2px 4px;
+}
+.card-feeds .card-button-group .btn:hover,
+.card-feeds .card-button-group .btn.active {
+	color: var(--brand-color);
+	border-color: transparent;
+}
+.card-feeds .card-button-group .btn:focus {
+	border-color: transparent;
+}
+
+.card-feeds .card-button-group .dropdown .btn:after {
+	display: none;
+}
+.card-feeds .card-button-group .dropdown .dropdown-menu .dropdown-item {
+	font-size: 14px;
+}
