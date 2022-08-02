@@ -3,12 +3,12 @@
 	--text-muted:#6C757D;
 }
 body {
-	/* font-family: 'Barlow', sans-serif; */
-	font-family: 'DM Sans', sans-serif;
-	/* font-family: 'Inter', sans-serif; */
 	font-size: 16px;
+	background: #f0f2f5;
 }
-.card-feeds {}
+.card-feeds {
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
 .card-feeds .card-profile {}
 .card-feeds .card-profile img {
 	width: 40px;
@@ -40,6 +40,9 @@ body {
 
 .card-feeds .card-button-group .dropdown .btn:after {
 	display: none;
+}
+.card-feeds .card-button-group .dropdown .dropdown-menu {
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 .card-feeds .card-button-group .dropdown .dropdown-menu .dropdown-item {
 	font-size: 14px;
