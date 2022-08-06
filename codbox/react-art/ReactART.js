@@ -1,10 +1,3 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 import * as React from 'react';
 import ReactVersion from 'shared/ReactVersion';
 import {LegacyRoot} from 'react-reconciler/src/ReactRootTags';
@@ -23,8 +16,6 @@ Mode.setCurrent(
   // Change to 'art/modes/dom' for easier debugging via SVG
   FastNoSideEffects,
 );
-
-/** Declarative fill-type objects; API design not finalized */
 
 const slice = Array.prototype.slice;
 
@@ -96,13 +87,8 @@ class Surface extends React.Component {
   }
 
   render() {
-    // This is going to be a placeholder because we don't know what it will
-    // actually resolve to because ART may render canvas, vml or svg tags here.
-    // We only allow a subset of properties since others might conflict with
-    // ART's properties.
-    const props = this.props;
 
-    // TODO: ART's Canvas Mode overrides surface title and cursor
+    const props = this.props;
     const Tag = Mode.Surface.tagName;
 
     return (
