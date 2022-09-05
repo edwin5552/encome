@@ -1,0 +1,71 @@
+body {
+	font-family: 'Inter', sans-serif;
+}
+
+
+
+/* =====[BUTTON]===== */
+.btn {
+	font-size: 18px;
+	font-weight: 500;
+	padding: 8px 20px;
+}
+
+
+/* =====[HEADER]===== */
+
+.navbar {}
+.navbar-brand {
+	font-size: 20px;
+	display: inline-flex;
+	align-items: center;
+}
+.navbar-brand svg {
+	width: 52px;
+	height: 52px;
+}
+.navbar-brand svg {}
+
+
+/* =====[SECTION]===== */
+.section {
+	padding: 100px 0 100px 0;
+}
+
+/* =====[SECTION TITLE]===== */
+.section-title {
+	font-size: 34px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+/* =====[SECTION FEATURES]===== */
+.section-features {}
+.section-features .card {
+	height: 100%;
+}
+.section-features .card .card-header {}
+.section-features .card .card-header svg {
+	width: 52px;
+	height: 52px;
+}
+
+
+/* =====[SECTION GRID]===== */
+.section-grid .media:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 120px;
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+}
+.section-grid .media .media-overlay {
+	z-index: 10;
+}
+.section-grid .lead {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+.section-grid {}
