@@ -1,14 +1,23 @@
+:root {
+	--brand-color: #198754;
+}
 body {
 	font-family: 'Inter', sans-serif;
 }
 
 
+p { font-size: 15px; }
+
+@media (min-width: 768px) {
+	p { font-size: 16px; }
+}
+
 
 /* =====[BUTTON]===== */
 .btn {
-	font-size: 18px;
-	font-weight: 500;
-	padding: 8px 20px;
+	/* font-size: 18px; */
+	/* font-weight: 500; */
+	/* padding: 8px 20px; */
 }
 
 
@@ -39,6 +48,37 @@ body {
 	margin-bottom: 20px;
 }
 
+
+/* =====[SECTION CLIENTS]===== */
+.section-clients { padding: 35px 0 40px 0; }
+.section-clients h6 {
+	font-size: 15px;
+	color: #A5A5A5;
+	margin-bottom: 20px;
+}
+.client-carousel .owl-nav,
+.client-carousel .owl-dots {
+	display: none;
+}
+.client-carousel .media { box-shadow: inset 0px 0px 0px 1px rgba(229,229,229,1); }
+.client-carousel .media img { max-width: 46px; }
+
+@media (min-width: 576px) {
+	.client-carousel .media img { max-width: 52px; }
+}
+@media (min-width: 768px) {
+	.section-clients { padding: 45px 0 50px 0; }
+	.section-clients h6 {  font-size: 16px; }
+	.client-carousel .media img { max-width: 60px; }
+}
+@media (min-width: 992px) {
+	.section-clients h6 { margin-bottom: 30px; }
+	.client-carousel .media img { max-width: 70px; }
+}
+@media (min-width: 1200px) {
+	.client-carousel .media img { max-width: 80px; }
+}
+
 /* =====[SECTION FEATURES]===== */
 .section-features {}
 .section-features .card {
@@ -50,6 +90,25 @@ body {
 	height: 52px;
 }
 
+
+
+/* =====[SECTION GRID MIN]===== */
+.section-grid-min .content h4 {
+	font-size: 18px;
+	margin-bottom: 12px;
+}
+.section-grid-min .content a { color: var(--brand-color); }
+.section-grid-min .content a:hover {
+	background: var(--brand-color);
+	color: #FFFFFF;
+}
+
+@media (min-width: 1200px) {
+	.section-grid-min .content h4 {
+		font-size: 20px;
+		margin-bottom: 14px;
+	}
+}
 
 /* =====[SECTION GRID]===== */
 .section-grid .media:before {
