@@ -1,11 +1,19 @@
 :root {
-	--brand-color: #198754;
+	--brand-color: #d33a2c;
 	--color: #333333;
 	--link-color:#006fc6;
+
+	--primary-bg:#006fc6;
+	--success-bg:#18a46f;
+	--danger-bg:#e62143;
+	--warning-bg:#ff6411;
 }
 
 body {
-	font-family: 'Inter', sans-serif;
+	/* font-family: 'Inter', sans-serif; */
+	/* font-family: 'Merriweather', serif; */
+	/* font-family: 'Noto Serif', serif; */
+	font-family: 'Roboto Slab', serif;
 }
 
 
