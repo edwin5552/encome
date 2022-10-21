@@ -6,7 +6,7 @@ class Demo {
   constructor(element) {
     this.element = element;
     this.shuffle = new Shuffle(element, {
-      itemSelector: '.picture-item',
+      itemSelector: '.col-6',
       sizer: element.querySelector('.my-sizer-element') });
 
 
@@ -140,7 +140,7 @@ class Demo {
           return false;
         }
       }
-      const titleElement = element.querySelector('.picture-item__title');
+      const titleElement = element.querySelector('.card-title');
       const titleText = titleElement.textContent.toLowerCase().trim();
       return titleText.indexOf(searchText) !== -1;
     });
