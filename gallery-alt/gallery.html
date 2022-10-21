@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Gallery</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap"> 
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/gallery.css">
+	</head>
+	<body class="bg-light">
+
+		<section class="py-5">
+			<div class="container">
+				
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="search" class="form-label text-muted">Search</label>
+    						<input type="text" class="form-control" id="search">
+						</div>
+					</div>
+				</div>
+
+				<div class="py-4"></div>
+
+				<div class="row">
+					<div class="col-lg-6">
+						<label class="form-label text-muted d-block">Filter</label>
+						<div class="btn-group filter-options" role="group">
+							<button type="button" class="btn btn-outline-primary" data-group="hollywood">Hollywood</button>
+							<button type="button" class="btn btn-outline-primary" data-group="bollywood">Bollywood</button>
+							<button type="button" class="btn btn-outline-primary" data-group="tollywood">Tollywood</button>
+							<button type="button" class="btn btn-outline-primary" data-group="mollywood">Mollywood</button>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<label class="form-label text-muted d-block">Sort</label>
+						<!-- <div class="btn-group" role="group">
+							<button type="button" class="btn btn-outline-dark">Default</button>
+							<button type="button" class="btn btn-outline-dark">Title</button>
+							<button type="button" class="btn btn-outline-dark">Date of Release</button>
+						</div> -->
+
+						<div class="btn-group sort-options" role="group">
+							<input type="radio" class="btn-check" name="sort-value" id="btnradio1" value="dom" autocomplete="off" checked>
+							<label class="btn btn-outline-dark" for="btnradio1">Default</label>
+							
+							<input type="radio" class="btn-check" name="sort-value" id="btnradio2" value="title" autocomplete="off">
+							<label class="btn btn-outline-dark" for="btnradio2">Title</label>
+							
+							<input type="radio" class="btn-check" name="sort-value" id="btnradio3" value="date-release" autocomplete="off">
+							<label class="btn btn-outline-dark" for="btnradio3">Date of Release</label>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="py-4"></div>
+
+
+
+				<div class="row">
+
+					<div class="col-lg-3 col-md-4 col-6" data-groups="['hollywood']" data-date-release="2022" data-title="Top Gun Maverick">
+						<div class="card">
+							<div class="card-media"><img src="img/top-gun-maverick-2022.jpg" alt="media"></div>
+							<div class="card-body"><h5 class="card-title mb-0">Top Gun: Maverick</h5></div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-4 col-6" data-groups="['bollywood']" data-date-release="2022" data-title="Vikram Vedha">
+						<div class="card">
+							<div class="card-media"><img src="img/vikram-vedha-2022.jpg" alt="media"></div>
+							<div class="card-body"><h5 class="card-title mb-0">Vikram Vedha</h5></div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-4 col-6" data-groups="['mollywood']" data-date-release="2022" data-title="Kaduva">
+						<div class="card">
+							<div class="card-media"><img src="img/kaduva-2022.jpg" alt="media"></div>
+							<div class="card-body"><h5 class="card-title mb-0">Kaduva</h5></div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-4 col-6" data-groups="['tollywood']" data-date-release="2022" data-title="Kantara">
+						<div class="card">
+							<div class="card-media"><img src="img/kantara-2022.jpg" alt="media"></div>
+							<div class="card-body"><h5 class="card-title mb-0">Kantara</h5></div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-4 col-6" data-groups="['hollywood']" data-date-release="2019" data-title="The Boys">
+						<div class="card">
+							<div class="card-media"><img src="img/the-boys-2019.jpg" alt="media"></div>
+							<div class="card-body"><h5 class="card-title mb-0">The Boys</h5></div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-4 col-6" data-groups="['tollywood']" data-date-release="2022" data-title="RRR">
+						<div class="card">
+							<div class="card-media"><img src="img/rrr-2022.jpg" alt="media"></div>
+							<div class="card-body"><h5 class="card-title mb-0">RRR</h5></div>
+						</div>
+					</div>
+					
+				</div>
+
+
+			</div>
+		</section>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+		<script src="https://unpkg.com/shufflejs@6"></script>
+		<script src="js/script.js"></script>
+
+	</body>
+</html>
