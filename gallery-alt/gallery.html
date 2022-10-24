@@ -16,8 +16,8 @@
 				<div class="row">
 					<div class="col-lg-6">
 						<div class="form-group">
-							<label for="filters-search-input" class="form-label text-muted">Search</label>
-    						<input type="search" class="form-control filter__search js-shuffle-search" id="filters-search-input">
+							<label for="" class="form-label text-muted">Search</label>
+    						<input type="text" class="form-control" id="" name="search" data-search>
 						</div>
 					</div>
 				</div>
@@ -28,10 +28,11 @@
 					<div class="col-lg-6">
 						<label class="form-label text-muted d-block">Filter</label>
 						<div class="btn-group filter-options" role="group">
-							<button type="button" class="btn btn-outline-primary" data-group="hollywood">Hollywood</button>
-							<button type="button" class="btn btn-outline-primary" data-group="bollywood">Bollywood</button>
-							<button type="button" class="btn btn-outline-primary" data-group="tollywood">Tollywood</button>
-							<button type="button" class="btn btn-outline-primary" data-group="mollywood">Mollywood</button>
+							<button type="button" class="btn btn-outline-primary" data-filter="all">All</button>
+							<button type="button" class="btn btn-outline-primary" data-filter="hollywood">Hollywood</button>
+							<button type="button" class="btn btn-outline-primary" data-filter="bollywood">Bollywood</button>
+							<button type="button" class="btn btn-outline-primary" data-filter="tollywood">Tollywood</button>
+							<button type="button" class="btn btn-outline-primary" data-filter="mollywood">Mollywood</button>
 						</div>
 					</div>
 					<div class="col-lg-6">
@@ -54,44 +55,44 @@
 
 
 
-				<div id="grid" class="row row-gallery">
+				<div id="grid" class="row row-gallery filter-container">
 
-					<div class="col-lg-3 col-md-4 col-6" data-groups="['hollywood']" data-date-release="2022" data-title="Top Gun Maverick">
+					<div class="col-lg-3 col-md-4 col-6" data-category="hollywood" data-title="Top Gun Maverick">
 						<div class="card">
 							<div class="card-media"><img src="img/top-gun-maverick-2022.jpg" alt="media"></div>
 							<div class="card-body"><h5 class="card-title mb-0">Top Gun: Maverick</h5></div>
 						</div>
 					</div>
 
-					<div class="col-lg-3 col-md-4 col-6" data-groups="['bollywood']" data-date-release="2022" data-title="Vikram Vedha">
+					<div class="col-lg-3 col-md-4 col-6" data-category="bollywood" data-title="Vikram Vedha">
 						<div class="card">
 							<div class="card-media"><img src="img/vikram-vedha-2022.jpg" alt="media"></div>
 							<div class="card-body"><h5 class="card-title mb-0">Vikram Vedha</h5></div>
 						</div>
 					</div>
 
-					<div class="col-lg-3 col-md-4 col-6" data-groups="['mollywood']" data-date-release="2022" data-title="Kaduva">
+					<div class="col-lg-3 col-md-4 col-6" data-category="mollywood" data-title="Kaduva">
 						<div class="card">
 							<div class="card-media"><img src="img/kaduva-2022.jpg" alt="media"></div>
 							<div class="card-body"><h5 class="card-title mb-0">Kaduva</h5></div>
 						</div>
 					</div>
 
-					<div class="col-lg-3 col-md-4 col-6" data-groups="['tollywood']" data-date-release="2022" data-title="Kantara">
+					<div class="col-lg-3 col-md-4 col-6" data-category="tollywood" data-title="Kantara">
 						<div class="card">
 							<div class="card-media"><img src="img/kantara-2022.jpg" alt="media"></div>
 							<div class="card-body"><h5 class="card-title mb-0">Kantara</h5></div>
 						</div>
 					</div>
 
-					<div class="col-lg-3 col-md-4 col-6" data-groups="['hollywood']" data-date-release="2019" data-title="The Boys">
+					<div class="col-lg-3 col-md-4 col-6" data-category="hollywood" data-title="The Boys">
 						<div class="card">
 							<div class="card-media"><img src="img/the-boys-2019.jpg" alt="media"></div>
 							<div class="card-body"><h5 class="card-title mb-0">The Boys</h5></div>
 						</div>
 					</div>
 
-					<div class="col-lg-3 col-md-4 col-6" data-groups="['tollywood']" data-date-release="2022" data-title="RRR">
+					<div class="col-lg-3 col-md-4 col-6" data-category="tollywood" data-title="RRR">
 						<div class="card">
 							<div class="card-media"><img src="img/rrr-2022.jpg" alt="media"></div>
 							<div class="card-body"><h5 class="card-title mb-0">RRR</h5></div>
@@ -111,6 +112,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
 		<!-- <script src="https://unpkg.com/shufflejs@6"></script> -->
 		<!-- <script src="https://unpkg.com/shufflejs@6.1.0/dist/shuffle.js"></script> -->
+		<script src="js/jquery.filterizr.min.js"></script>
 		<script src="js/script.js"></script>
 
 	</body>
