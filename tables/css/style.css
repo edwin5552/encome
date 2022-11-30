@@ -1,0 +1,60 @@
+/* ============================
+Theme Name: 
+Version: 1.4
+Description: 
+Author: Edwin
+First Update: 01/12/2022
+Last Update: 01/12/2022
+License: GNU General Public License v2 or later
+============================*/
+
+/* ============================
+# VARIABLES
+============================*/
+:root {
+	--font: 'Inter',sans-serif;
+	--brand-color: #E30613;
+	--color: #000000;
+}
+
+/* ============================
+# RESET STYLES
+============================*/
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: var(--font);
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--color);
+}
+button,
+a { display: inline-block; }
+a,
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+button,
+button:hover,
+button:focus {
+	outline: none;
+}
+h1, h2, h3, h4, h5, h6 { font-weight: 700; }
+p { font-weight: 400; }
+img { 
+	max-width: 100%; 
+	height: auto;
+}
+
+
+/* ============================
+# BOOTSTRAP / USER RESET
+============================*/
+
+
+/* ============================
+# ELEMENTS
+============================*/
